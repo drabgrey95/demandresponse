@@ -31,6 +31,8 @@ Add zone to zone temperature interactions in initial test
 
 
 """
+#!pip install streamlit
+import streamlit as st
 
 import matplotlib.pyplot as plt
 import plotly.express as px
@@ -39,9 +41,6 @@ import numpy as np
 import copy
 import math
 import statistics
-
-#!pip install streamlit
-import streamlit as st
 
 class hvac:
   def __init__(self, name, coolrate={0:0,1:-0.25,2:-0.5,3:-0.5}, heatrate={0:0,1:0.4}, ctimer=5, coolenergy={0:0,1:1,2:2,3:2}, heatenergy={0:0,1:4}):
